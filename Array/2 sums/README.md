@@ -2,7 +2,7 @@
 
 ### Solution 1 
 
-#### Using 2 for loop
+Using 2 for loop
 ```
 Time complexity - O(n^2)
 Space Complexity - O(1)
@@ -10,7 +10,7 @@ Space Complexity - O(1)
 
 ### Solution 2
 
-#### Using hash table
+Using hash table
 
 ```
 Time complexity - O(n)
@@ -38,7 +38,7 @@ step 3 :-  y = 10 - (-1) = 11 (11 is present in hash table)
 
 ### Solution 3
 
-#### Using sorting algorithm
+Using sorting algorithm
 
 ```
 Time complexity - O(nlog(n))
