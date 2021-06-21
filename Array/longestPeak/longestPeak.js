@@ -53,4 +53,4 @@ function longestPeak(array) {
     return longestPeak;
 }
 
-longestPeak([1, 2, 3, 4, 5, 6, 10, 100, 1000]);
+longestPeak([1, 2, 3, 4, 5, 6, 10, 100, 1000]); 
