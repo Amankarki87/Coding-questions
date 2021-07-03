@@ -1,3 +1,6 @@
+// Time - O(n^2)
+// Space - O(1)
+
 function firstNonRepeatingCharacter(string) {
     let characterFrequencies = {};
 
