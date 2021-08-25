@@ -13,6 +13,9 @@
 //     return totalSumOfNNumber - currentSum;
 // }
 
+// Time - O(n)
+// Space - O(1)
+
 var missingNumber = function (nums) {
     let xor1 = nums[0];
     
