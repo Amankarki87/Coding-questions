@@ -26,7 +26,7 @@ var missingNumber = function (nums) {
     for (let i = 0;i < nums.length + 1; i++ ) {
         xor1 = xor1 ^ i;
     }
-
+    
     return xor1;
 }
 
