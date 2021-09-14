@@ -5,7 +5,7 @@ class BST {
         this.right = null;
     }
 
-    // time - O(log(n)) || O(n)
+    // time - average - O(log(n)) || worst - O(n)
     // Space - O(1)
 
     insert(value) {
@@ -32,7 +32,7 @@ class BST {
         return this;
     }
 
-    // time - O(log(n)) || O(n)
+    // time - average - O(log(n)) || worst - O(n)
     // Space - O(1)
 
     contains(value) {
@@ -48,7 +48,7 @@ class BST {
             }
         }
 
-        console.log("false")
+        // console.log("false")
         return false;
     }
 
@@ -69,7 +69,15 @@ class BST {
                 if (currentNode.left !== null && currentNode.right !== null) {
                     currentNode.value = currentNode.right.getMinValue();
                     currentNode.right.remove(currentNode.value,currentNode);
-                } else if (parentNode === null) {
+                } else if (parentNode === null) {    // Root node where parent node is not present.
+                    
+                    // FOR BST IN fashion
+                    //      1
+                    //        \
+                    //          2
+                    //         /  \
+                    //        3     4
+
                     if (currentNode.left !== null) {
                         currentNode.value = currentNode.left.value;
                         currentNode.right = currentNode.left.right;
@@ -107,5 +115,6 @@ r.insert(4);
 r.insert(20);
 r.insert(3);
 r.insert(25);
+r.insert(18);
 r.contains(7);
-r.remove(5);
+// r.remove(20);
