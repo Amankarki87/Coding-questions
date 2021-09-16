@@ -1,5 +1,6 @@
 // Time - Average - O(nlog(n)), Worst -O(n^2) when created BST is like linked list
-// Space - O(n)
+// Space - O(n
+
 
 function rightSmallerThan(array) {
     if (array.length === 0) return [];
